@@ -1,2 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import "tailwindcss";
 @plugin "daisyui";
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url("/src/assets/img_grain.png") no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.x_wd_waves {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: auto;
+  right: auto;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(-50%);
+  object-fit: cover;
+  z-index: -3;
+  pointer-events: none;
+  opacity: 0.65;
+  -webkit-mask-image: linear-gradient(to top, transparent, #000 50%);
+  mask-image: linear-gradient(to top, transparent, #000 50%);
+}
