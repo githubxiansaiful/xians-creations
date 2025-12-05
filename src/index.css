@@ -7,7 +7,9 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-
+html {
+  background: #000;
+}
 .noise {
   position: fixed;
   top: 0;
